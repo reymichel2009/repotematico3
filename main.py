@@ -24,8 +24,8 @@ from pydownloader.downloader import Downloader
 import shorturl
 import xdlink
 
-tl_admin_users = ['xxxxx'] #Poner aqui los user con acceso permanente
-godlist = ['xxxxxx'] #Poner aqui los admin 
+tl_admin_users = ['reymichel2009'] #Poner aqui los user con acceso permanente
+godlist = ['reymichel2009'] #Poner aqui los admin 
 
 async def get_root(username):
     if os.path.isdir(config.ROOT_PATH+username)==False:
@@ -173,7 +173,7 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
 
     #if username not in config.ACCES_USERS:
     if username not in tl_admin_users:
-        await bot.send_message(ev.chat.id,'❌ ℕ𝕠 𝕥𝕚𝕖𝕟𝕖𝕤 #𝕒𝕔𝕔𝕖𝕤𝕠, 𝕔𝕠𝕟𝕥𝕒𝕔𝕥𝕒 𝕔𝕠𝕟 @Ghosthell0210 ❌')
+        await bot.send_message(ev.chat.id,'🆃🅴 🅵🅰🅻🆃🅰 🅲🅰🅻🅻🅴 🅲🆁🅰🅲🅺')
         return
 
     if not os.path.isdir(config.ROOT_PATH + username):
@@ -215,9 +215,9 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
         pass
 
     if '/start' in text:
-        reply = '————————》<a href="https://t.me/Ghosthell0210">GhostNeverDie🎉</a>《—————————\n'
-        reply += '#𝔹𝕠𝕥 𝕡𝕖𝕣𝕥𝕖𝕟𝕖𝕔𝕚𝕖𝕟𝕥𝕖 𝕒 𝕝𝕒 𝕔𝕒𝕕𝕖𝕟𝕒  #GhostNeverDie\n\n'
-        reply += '𝓔𝓷𝓿í𝓮𝓶𝓮 𝓮𝓷𝓵𝓪𝓬𝓮𝓼 𝓹𝓪𝓻𝓪 𝓼𝓮𝓻 #𝓓𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓭𝓸𝓼\n🔍 𝓜𝓪𝓷𝓭𝓮 /info 𝔂 𝓵𝓮𝓪 𝓭𝓮𝓽𝓪𝓵𝓵𝓪𝓭𝓪𝓶𝓮𝓷𝓽𝓮\n————————》<a href="https://t.me/Ghosthell0210">GhostNeverDie</a>《—————————\n'
+        reply = '————————》<a href="https://t.me/reymichel2009">Rey Michel</a>《—————————\n'
+        reply += 'Bot Perteneciente a Rey Michel esperamos que lo disfrute'
+        reply += '𝓔𝓷𝓿í𝓮𝓶𝓮 𝓮𝓷𝓵𝓪𝓬𝓮𝓼 𝓹𝓪𝓻𝓪 𝓼𝓮𝓻 #𝓓𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓭𝓸𝓼\n🔍 𝓜𝓪𝓷𝓭𝓮 /info 𝔂 𝓵𝓮𝓪 𝓭𝓮𝓽𝓪𝓵𝓵𝓪𝓭𝓪𝓶𝓮𝓷𝓽𝓮\n————————》<a href="https://t.me/reymichel2009">Rey Michel</a>《—————————\n'
         message = await bot.send_message(ev.chat.id,reply,parse_mode='html')
         pass
     if '/add' in text and username in godlist:
@@ -263,11 +263,11 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
         message = await bot.send_message(ev.chat.id,'❌ El usario a sido eliminado')
         return
 
-    if '/info' in text:
-        message = await bot.send_message(ev.chat.id,'⚠️ 𝔼𝕤 #𝕚𝕞𝕡𝕠𝕣𝕥𝕒𝕟𝕥𝕖 𝕢𝕦𝕖 𝕔𝕠𝕟𝕠𝕫𝕔𝕒 𝕢𝕦𝕖 𝕦𝕤𝕥𝕖𝕕 𝕥𝕚𝕖𝕟𝕖 𝕢𝕦𝕖 #𝕣𝕖𝕟𝕠𝕞𝕓𝕣𝕒𝕣 𝕝𝕠𝕤 𝕒𝕣𝕔𝕙𝕚𝕧𝕠𝕤 𝕥𝕣𝕒𝕤 𝕤𝕖𝕣 𝕕𝕖𝕤𝕔𝕒𝕣𝕘𝕒𝕕𝕠𝕤 𝕡𝕒𝕣𝕒 𝕢𝕦𝕖 𝕤𝕖 𝕕𝕖𝕤𝕔𝕠𝕞𝕡𝕣𝕚𝕞𝕒𝕟 𝕤𝕚𝕟 𝕡𝕣𝕠𝕓𝕝𝕖𝕞𝕒\n\n>>>> 𝕊𝕠𝕝𝕠 𝕥𝕚𝕖𝕟𝕖 𝕢𝕦𝕖 𝕢𝕦𝕚𝕥𝕒𝕣𝕝𝕖 𝕖𝕝 .𝕣𝕒𝕣 𝕢𝕦𝕖 𝕥𝕚𝕖𝕟𝕖 𝕒𝕝 𝕗𝕚𝕟𝕒𝕝 𝕔𝕒𝕕𝕒 𝕒𝕣𝕔𝕙𝕚𝕧𝕠\n#Ejemplo:\nvideo.7z.001.rar =>> video.7z.001\n================\n\n>>>> 𝕄𝕒𝕟𝕕𝕖 𝕦𝕟 𝕖𝕟𝕝𝕒𝕔𝕖 𝕕𝕚𝕣𝕖𝕔𝕥𝕠 𝕪 𝕔𝕦𝕒𝕟𝕕𝕠 𝕝𝕠 𝕤𝕦𝕓𝕒 𝕒 𝕦𝕤𝕖 𝕖𝕝 𝕔𝕠𝕞𝕒𝕟𝕕𝕠 /𝕦𝕡 𝕞á𝕤 𝕖𝕝 𝕟ú𝕞𝕖𝕣𝕠 𝕔𝕠𝕣𝕣𝕖𝕤𝕡𝕠𝕟𝕕𝕚𝕖𝕟𝕥𝕖\n/up 0\n================\n')
-        lag = os.path.basename('lag.tgs')
-        message = await bot.send_file(ev.chat,lag)
-        return
+    #f'/info' in text:
+     #  message = await bot.send_message(ev.chat.id,'⚠️ 𝔼𝕤 #𝕚𝕞𝕡𝕠𝕣𝕥𝕒𝕟𝕥𝕖 𝕢𝕦𝕖 𝕔𝕠𝕟𝕠𝕫𝕔𝕒 𝕢𝕦𝕖 𝕦𝕤𝕥𝕖𝕕 𝕥𝕚𝕖𝕟𝕖 𝕢𝕦𝕖 #𝕣𝕖𝕟𝕠𝕞𝕓𝕣𝕒𝕣 𝕝𝕠𝕤 𝕒𝕣𝕔𝕙𝕚𝕧𝕠𝕤 𝕥𝕣𝕒𝕤 𝕤𝕖𝕣 𝕕𝕖𝕤𝕔𝕒𝕣𝕘𝕒𝕕𝕠𝕤 𝕡𝕒𝕣𝕒 𝕢𝕦𝕖 𝕤𝕖 𝕕𝕖𝕤𝕔𝕠𝕞𝕡𝕣𝕚𝕞𝕒𝕟 𝕤𝕚𝕟 𝕡𝕣𝕠𝕓𝕝𝕖𝕞𝕒\n\n>>>> 𝕊𝕠𝕝𝕠 𝕥𝕚𝕖𝕟𝕖 𝕢𝕦𝕖 𝕢𝕦𝕚𝕥𝕒𝕣𝕝𝕖 𝕖𝕝 .𝕣𝕒𝕣 𝕢𝕦𝕖 𝕥𝕚𝕖𝕟𝕖 𝕒𝕝 𝕗𝕚𝕟𝕒𝕝 𝕔𝕒𝕕𝕒 𝕒𝕣𝕔𝕙𝕚𝕧𝕠\n#Ejemplo:\nvideo.7z.001.rar =>> video.7z.001\n================\n\n>>>> 𝕄𝕒𝕟𝕕𝕖 𝕦𝕟 𝕖𝕟𝕝𝕒𝕔𝕖 𝕕𝕚𝕣𝕖𝕔𝕥𝕠 𝕪 𝕔𝕦𝕒𝕟𝕕𝕠 𝕝𝕠 𝕤𝕦𝕓𝕒 𝕒 𝕦𝕤𝕖 𝕖𝕝 𝕔𝕠𝕞𝕒𝕟𝕕𝕠 /𝕦𝕡 𝕞á𝕤 𝕖𝕝 𝕟ú𝕞𝕖𝕣𝕠 𝕔𝕠𝕣𝕣𝕖𝕤𝕡𝕠𝕟𝕕𝕚𝕖𝕟𝕥𝕖\n/up 0\n================\n')
+     #  lag = os.path.basename('lag.tgs')
+      # message = await bot.send_file(ev.chat,lag)
+       #return
     if '/admin' in text:
         username = ev.message.chat.username
         print(username)
@@ -300,11 +300,11 @@ async def onmessage(bot:TelegramClient,ev: NewMessage.Event,loop,ret=False):
     if '/ls' in text:
         await send_root(bot,ev,username)
         return
-    if '/rm' in text:
+    if '/rm_all text:
         message = await bot.send_message(ev.chat.id,'#ℂ𝕠𝕞𝕖𝕟𝕫𝕒𝕟𝕕𝕠 ....')
         text = str(text).replace('/rm ','')
         index = 0
-        range = 1
+        range = 100
         try:
             cmdtokens = str(text).split(' ')
             if len(cmdtokens)>0:
